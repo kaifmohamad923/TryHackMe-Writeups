@@ -15,7 +15,7 @@ Here's a link to my TryHackMe profile:
 
 | Room Name | OS | Description | Tools Used |
 |:---:|:---:|---|---|
-| [Simple CTF](Simple-CTF/README.md) | Linux (Ubuntu) | Brief description of Room 1 | `nmap`, `gobuster` |
+| [Simple CTF](Simple-CTF/README.md) | Linux (Ubuntu) | Brief description of Room 1 | `nmap`, `gobuster`, `searchsploit` |
 | [Room 2 Name](room2/README.md) | Windows 10 | Brief description of Room 2 | `nmap`, `metasploit`, `hydra` |
 | [Room 3 Name](room3/README.md) | Linux (CentOS) | Brief description of Room 3 | `nmap`, `wpscan`, `john` |
 
