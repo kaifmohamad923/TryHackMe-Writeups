@@ -8,11 +8,8 @@ Check out the TryHackMe website: <https://tryhackme.com>
 
 Here's a link to my TryHackMe profile:
 
-[![TryHackMe Profile](your-profile-image.png)](https://tryhackme.com/p/your-username)
+[![TryHackMe Profile]("E:\github\TryHackMe-Writeups\Images\Screenshot 2025-09-23 151315.png")](https://tryhackme.com/p/kaifmohamad923)
 
-> Replace `your-profile-image.png` with your badge image, and `your-username` with your TryHackMe username.
-
----
 
 ## TryHackMe Writeups Table
 
