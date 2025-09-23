@@ -1,6 +1,6 @@
 # Try Hack Me Writeup - Simple CTF
 
-- Tryhackme Room : <https://tryhackme.com/room/easyctf>
+- TryHackMe Room : <https://tryhackme.com/room/easyctf>
 
 
 ![alt text]( images/simple-ctf-logo.png "simple ctf room Image")
@@ -8,7 +8,7 @@
 
 Write-up and walkthrough of the TryHackMe ‘Simple CTF’ room, including step-by-step exploitation process with screenshots.
 
-#Tools Used
+# Tools Used
 - `nmap`
 - `gobuster`
 - `searchsploit`
@@ -19,7 +19,7 @@ To find ports below 1000 we can use - `nmap -p 1-1000 TARGET-IP`
 
 ![alt text]( images/q-1-1.png "Q1 Image")
 
-We can see here is 2 ports are running under port 1000
+We can see there is 2 ports are running under port 1000
 
 ```commandline
 2
@@ -33,7 +33,7 @@ To find that we can perform simple nmap scans
 
 ![alt text]( images/q-2-2.png "Q 2 Image" )
 
-We can see ssh are running 
+We can see SSH are running 
 
 ```commandline
 SSH
@@ -46,12 +46,12 @@ I discovered a hidden directory with - `gobuster`
 
 ![alt text]( images/q-3-3.png "Q 3 Image" )
 
-You can see in image that i found a hidden dircetory - `/simple`
-then i visit this url  -`TARGET-IP/simple`
+You can see in the image that I found a hidden directory - `/simple`
+then I visit this url  -`TARGET-IP/simple`
 
 ![alt text]( images/q-3-4.png "Q 3 Image" )
 
-You can see that i found in the buttom - `CMS Made Simple version 2.2.8` then i simply search it on google
+You can see that i found in the bottom - `CMS Made Simple version 2.2.8` then i simply search it on google
 
 ![alt text]( images/q-3-5.png "Q 3 Image" )
 
@@ -61,7 +61,7 @@ CVE-2019-9053
 
 ## 4. To what kind of vulnerability is the application vulnerable?
 
-We can see in exploit.db page on top that it can vulnerable with - `sql injection`
+From the Exploit-DB page we can see the application is vulnerable to - `SQL injection`
 
 ```commandline
 SQLI
@@ -70,16 +70,16 @@ SQLI
 ## 5. What's the password?
 
 You can see in exploit.db we have EDB-ID - `46635`
-now we have to save this exploit in over attacker machine to save this use this command - `searchsploit -m 46635`
+Now we have to save this exploit on our attacker machine USE: - `searchsploit -m 46635`
 
 ![alt text]( images/q-5-6.png "Q 3 Image" )
 
-after that you have to run that exploit with below's command
+After that run the exploit with the command below:
 - `python2 46635.py -u TARGET-IP/simple/ --crack -w /usr/share/wordlists/rockyou.txt`
 
 ![alt text]( images/q-5-7.png "Q 3 Image" )
 
-After running that command it take's time to find username, password and email (its take 2/3 minutes) 
+After running that command it takes some time to find the username, password and email (it takes ~2–3 minutes) 
 
 ```commandline
 secret
@@ -87,17 +87,17 @@ secret
 
 ## 6. Where can you login with the details obtained?
 
-now you have user name and password use it for SSH
+Now you have the username and password — use them to SSH in
 - `ssh mitch@TARGET-IP`
 Enter the password - `secret`
 
 ```commandline
-SSh
+SSH
 ```
 
 ## 7. What's the user flag?
 
-you can find a file - `user.txt` open it with - `cat` 
+You can find the file - `user.txt` open it with - `cat` 
 
 ```commandline
 G00d j0b, keep up!
@@ -114,7 +114,7 @@ sunbath
 
 ## 9. What can you leverage to spawn a privileged shell?
 
-we can use vim to privilage shell i found this command on 'https://gtfobins.github.io/gtfobins/vim/'
+We can use vim to spawn a privileged shell. I found this command on 'https://gtfobins.github.io/gtfobins/vim/'
 - `sudo vim -c ':!/bin/sh'`
 
 ![alt text]( images/q-9-9.png "Q 3 Image" )
