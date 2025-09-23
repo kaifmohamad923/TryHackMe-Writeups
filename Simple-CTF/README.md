@@ -13,7 +13,7 @@ Write-up and walkthrough of the TryHackMe ‘Simple CTF’ room, including step-
 - `gobuster`
 - `searchsploit`
 
-# 1. How many services are running under port 1000?
+## 1. How many services are running under port 1000?
 
 To find ports below 1000 we can use - `nmap -p 1-1000 TARGET-IP`
 
