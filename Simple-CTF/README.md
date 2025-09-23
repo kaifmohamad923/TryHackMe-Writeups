@@ -132,3 +132,9 @@ I discovered that user mitch can run /usr/bin/vim as root without a password (- 
 ```commandline
 W3ll d0n3. You made it!
 ```
+
+## Conclusion
+
+This writeup documents the full exploitation of the TryHackMe "Simple CTF" room . I discovered a CMS Made Simple instance (v2.2.8) and used CVE-2019-9053 to recover credentials, logged in via SSH, and escalated to root by abusing a sudo Vim configuration to read both user and root flags.
+
+Artifacts (screenshots, commands) are included in the repository under `/images`. This work is for educational purposes only — thanks to TryHackMe and the authors of the public exploits used.
