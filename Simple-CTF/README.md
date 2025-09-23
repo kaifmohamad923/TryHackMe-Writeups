@@ -13,6 +13,8 @@ Write-up and walkthrough of the TryHackMe ‘Simple CTF’ room, including step-
 - `gobuster`
 - `searchsploit`
 
+
+
 ## 1. How many services are running under port 1000?
 
 To find ports below 1000 we can use - `nmap -p 1-1000 TARGET-IP`
@@ -24,6 +26,8 @@ We can see there is 2 ports are running under port 1000
 ```commandline
 2
 ```
+
+
 
 ## 2. What is running on the higher port?
 
@@ -38,6 +42,8 @@ We can see SSH are running
 ```commandline
 SSH
 ```
+
+
 
 ## 3. What's the CVE you're using against the application?
 
@@ -59,6 +65,8 @@ You can see that i found in the bottom - `CMS Made Simple version 2.2.8` then i 
 CVE-2019-9053
 ```
 
+
+
 ## 4. To what kind of vulnerability is the application vulnerable?
 
 From the Exploit-DB page we can see the application is vulnerable to - `SQL injection`
@@ -66,6 +74,8 @@ From the Exploit-DB page we can see the application is vulnerable to - `SQL inje
 ```commandline
 SQLI
 ```
+
+
 
 ## 5. What's the password?
 
@@ -85,6 +95,8 @@ After running that command it takes some time to find the username, password and
 secret
 ```
 
+
+
 ## 6. Where can you login with the details obtained?
 
 Now you have the username and password — use them to SSH in
@@ -95,6 +107,8 @@ Enter the password - `secret`
 SSH
 ```
 
+
+
 ## 7. What's the user flag?
 
 You can find the file - `user.txt` open it with - `cat` 
@@ -102,6 +116,8 @@ You can find the file - `user.txt` open it with - `cat`
 ```commandline
 G00d j0b, keep up!
 ```
+
+
 
 ## 8. Is there any other user in the home directory? What's its name?
 
@@ -111,6 +127,8 @@ Then you can see other user
 ```commandline
 sunbath
 ```
+
+
 
 ## 9. What can you leverage to spawn a privileged shell?
 
@@ -123,6 +141,8 @@ We can use vim to spawn a privileged shell. I found this command on 'https://gtf
 vim
 ```
 
+
+
 ## 10. What's the root flag?
 
 I discovered that user mitch can run /usr/bin/vim as root without a password (- `sudo -l showed NOPASSWD: /usr/bin/vim`). I abused this by spawning a root shell with - `sudo vim -c ':!/bin/sh'`, which dropped me to a root shell (uid=0). From there I changed to /root and read the flag file: -`cat /root/root.txt`
@@ -132,6 +152,8 @@ I discovered that user mitch can run /usr/bin/vim as root without a password (- 
 ```commandline
 W3ll d0n3. You made it!
 ```
+
+
 
 ## Conclusion
 
