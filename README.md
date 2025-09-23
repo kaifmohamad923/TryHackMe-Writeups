@@ -8,7 +8,7 @@ Check out the TryHackMe website: <https://tryhackme.com>
 
 Here's a link to my TryHackMe profile:
 
-[![TryHackMe Profile](Screenshot 2025-09-23 151315.png)](https://tryhackme.com/p/kaifmohamad923)
+[![TryHackMe Profile](tryhackme-profile.png)](https://tryhackme.com/p/kaifmohamad923)
 
 
 ## TryHackMe Writeups Table
