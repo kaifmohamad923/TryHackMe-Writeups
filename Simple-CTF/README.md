@@ -21,8 +21,9 @@ To find ports below 1000 we can use - `nmap -p 1-1000 TARGET-IP`
 
 We can see here is 2 ports are running under port 1000
 
-
-Awnser -`2`
+```commandline
+SSH
+```
 
 # 2. What is running on the higher port?
 
@@ -33,8 +34,6 @@ To find that we can perform simple nmap scans
 ![alt text]( images/q-2-2.png "Q 2 Image" )
 
 We can see ssh are running 
-
-Awnser -`ssh`
 
 ```commandline
 SSH
