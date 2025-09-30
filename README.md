@@ -15,7 +15,7 @@ Here's a link to my TryHackMe profile:
 
 | Room Name | OS | Description | Tools Used |
 |:---:|:---:|---|---|
-| [Simple CTF](Simple-CTF/README.md) | Linux (Ubuntu) | Brief description of Room 1 | `nmap`, `gobuster`, `searchsploit` |
-| [Room 2 Name](room2/README.md) | Windows 10 | Brief description of Room 2 | `nmap`, `metasploit`, `hydra` |
+| [Simple CTF](Simple-CTF/README.md) | Linux (Ubuntu) | Basic enumeration and exploitation. | `nmap`, `gobuster`, `searchsploit` |
+| [OhSINT](OhSINT/README.md) | Linux (Ubuntu) | OSINT challenge from a single image. | `exiftool` |
 | [Room 3 Name](room3/README.md) | Linux (CentOS) | Brief description of Room 3 | `nmap`, `wpscan`, `john` |
 
