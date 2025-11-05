@@ -59,7 +59,7 @@ now there is one more hidden directory and that is -`/whatever`  so simply visit
 
 ![alt text]( q_4_2.png "Step 2 Image")
 
-after that we have check a page source
+after that we have to check a page source
 
 ![alt text]( q_4_3.png "Step 3 Image")
 
@@ -71,35 +71,54 @@ and we can find this so to know what it is i simply ask to gemini
 flag{f1rs7_fl4g}
 ```
 
-## 5. 
+## 5. Further enumerate the machine, what is flag 2?
 
+so in privuse qustion we performed -`gobuster` and we found hiden directory -`/roborts.txt` so simply visit there and you can find this
+
+![alt text]( q_5_1.png "Step 1 Image")
+
+no to decode it i use -`md5hashing.net`
+
+![alt text]( q_5_2.png "Step 2 Image")
 
 ```commandline
-
+flag{1m_s3c0nd_fl4g}
 ```
 
-## 6. 
+## 6. Crack the hash with easypeasy.txt, What is the flag 3?
 
+so this time we can find direcot awnser on -`TARGETIP:65524/` so visit there and find carefully you can find awnser
 
+![alt text]( q_6_1.png "Step 1 Image")
 
 ```commandline
-
+flag{9fdafbd64c47471a8f54cd3fc64cd312}
 ```
 
-## 7. 
+## 7. What is the hidden directory?
 
+while finding a awnser of qustion 6 you also seen this 
 
+![alt text]( q_7_1.png "Step 1 Image")
+
+to decode it you have to use format base62 on -`Cyberchef`
+
+![alt text]( q_7_2.png "Step 2 Image")
 
 ```commandline
-
+/n0th1ng3ls3m4tt3r
 ```
 
-## 8. 
+## 8. Using the wordlist that provided to you in this task crack the hash what is the password?
 
+ now to find it you have visit TARGWTIP/n0th1ng3ls3m4tt3r and in that page viwe page source then you can see a hash 
+ then crack it on -`md5hashing.net`
+
+![alt text]( q_8_1.png "Step 1 Image")
 
 
 ```commandline
-
+mypasswordforthatjob
 ```
 
 ## 9. 
