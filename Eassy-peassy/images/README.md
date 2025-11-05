@@ -40,10 +40,10 @@ you have to check on port 80
 
 ## 3. What is running on the highest port?
 
-now lets check on port 65524 you can find awsers of 1 to 3 by running only one command and that is -`sudo nmap -sV -p- TARGET` so you dont have to use diffrent commands to find diffrent awsers here but i use diffrent commands for every singel qustions
+now lets check on port 65524 you can find answers of 1 to 3 by running only one command and that is -`sudo nmap -sV -p- TARGET` so you don't have to use different commands to find different answers here but i use different commands for every single questions
 
 ![alt text]( q_3_1.png "Step 1 Image")
-now we can see Apache so thats the awnser
+now we can see Apache so thats the answer
 
 ```commandline
 Apache
@@ -73,7 +73,7 @@ flag{f1rs7_fl4g}
 
 ## 5. Further enumerate the machine, what is flag 2?
 
-so in privuse qustion we performed -`gobuster` and we found hiden directory -`/roborts.txt` so simply visit there and you can find this
+so in prevues question we performed -`gobuster` and we found hidden directory -`/roborts.txt` so simply visit there and you can find this
 
 ![alt text]( q_5_1.png "Step 1 Image")
 
@@ -87,7 +87,7 @@ flag{1m_s3c0nd_fl4g}
 
 ## 6. Crack the hash with easypeasy.txt, What is the flag 3?
 
-so this time we can find direcot awnser on -`TARGETIP:65524/` so visit there and find carefully you can find awnser
+so this time we can find direct answer on -`TARGETIP:65524/` so visit there and find carefully you can find answer
 
 ![alt text]( q_6_1.png "Step 1 Image")
 
@@ -97,7 +97,7 @@ flag{9fdafbd64c47471a8f54cd3fc64cd312}
 
 ## 7. What is the hidden directory?
 
-while finding a awnser of qustion 6 you also seen this 
+while finding a answer of question 6 you also seen this 
 
 ![alt text]( q_7_1.png "Step 1 Image")
 
@@ -111,7 +111,7 @@ to decode it you have to use format base62 on -`Cyberchef`
 
 ## 8. Using the wordlist that provided to you in this task crack the hash what is the password?
 
- now to find it you have visit TARGWTIP/n0th1ng3ls3m4tt3r and in that page viwe page source then you can see a hash 
+ now to find it you have visit TARGET-IP/n0th1ng3ls3m4tt3r and in that page view page source then you can see a hash 
  then crack it on -`md5hashing.net`
 
 ![alt text]( q_8_1.png "Step 1 Image")
