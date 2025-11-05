@@ -121,30 +121,30 @@ to decode it you have to use format base62 on -`Cyberchef`
 mypasswordforthatjob
 ```
 
-## 9. 
+## 9. What is the password to login to the machine via SSH?
 
 
 
 ```commandline
-
+iconvertedmypasswordtobinary
 ```
 
-## 10. 
+## 10. What is the user flag?
 
 
 
 ```commandline
-
+flag{n0wits33msn0rm4l}
 ```
 
-## 11. 
+## 11. What is the root flag?
 
 
 
 ```commandline
-
+flag{63a9f0ea7bb98050796b649e85481845}
 ```
 
-## Conclusion
+
 
 
