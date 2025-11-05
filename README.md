@@ -17,5 +17,5 @@ Here's a link to my TryHackMe profile:
 |:---:|:---:|---|---|
 | [Simple CTF](Simple-CTF/README.md) | Linux (Ubuntu) | Basic enumeration and exploitation. | `nmap`, `gobuster`, `searchsploit` |
 | [OhSINT](OhSINT/README.md) | Linux (Ubuntu) | OSINT challenge from a single image. | `exiftool` |
-| [Easy Peasy](Eassy-peassy/images/README.md) | Linux (CentOS) | Brief description of Room 3 | `nmap`, `gobuster` |
+| [Easy Peasy](Eassy-peassy/images/README.md) | Linux (CentOS) | Practice using tools such as Nmap and GoBuster | `nmap`, `gobuster` |
 
